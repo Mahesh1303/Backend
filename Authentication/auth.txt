@@ -1,0 +1,24 @@
+Auth is categorized in two different categories 
+
+Stateful Auth : 
+    Which maintains state or data on server side is Stateful Auth
+
+
+    Client will request username and password
+    in return server will return an unique id this is called session unique id
+    server will keep track of that unique id
+    whenever again the user requests the server generated id will be provided with that request . Server will then check who that Serverid belongs to
+    So it verifies the user using that id 
+    After Verifying only then it sends response 
+
+    this id can be provided in cookiees ,response ,headers
+
+
+    We will Create A AuthMiddleware 
+        This MiddleWare will check for the cookie 
+    if valid then it will call next 
+    else it will reject that 
+
+
+
+Stateless:

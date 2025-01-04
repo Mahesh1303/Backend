@@ -1,0 +1,18 @@
+const sessionId= new Map()
+
+
+const setUserId=(id,user)=>{
+    sessionId.set(id,user)
+    
+}   
+
+const getUserId=(id)=>{
+  return  sessionId.get(id)
+}
+
+
+modules.export={
+    setUserId,getUserId
+}
+
+
